@@ -1,6 +1,4 @@
 .logo {
-  margin-right: 93px;
-
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -8,4 +6,12 @@
   line-height: 1.19;
 
   text-decoration: none;
+}
+
+.logo-part--color-dark {
+  color: #000000;
+}
+
+.logo-part--color-light {
+  color: var(--primary-white-color);
 }

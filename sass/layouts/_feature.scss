@@ -1,14 +1,14 @@
-.feature-list {
+.feature__list {
   display: flex;
   gap: 30px;
 }
 
-.feature-list .item {
+.feature__item {
   display: block;
   width: calc((100% - 90px) / 4);
 }
 
-.feature-list .icon-wrap {
+.feature__icon-wrap {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   border-radius: 4px;
 }
 
-.feature-list .title {
+.feature__title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -29,7 +29,7 @@
   text-transform: uppercase;
 }
 
-.feature-list .text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
 }

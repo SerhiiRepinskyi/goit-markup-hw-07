@@ -5,25 +5,25 @@
   background-color: #2f303a;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-soc-wrap {
-  margin-left: 70px;
-}
-
-.footer .logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
 
-.logo .footer-logo {
-  color: var(--primary-white-color);
+.address__item {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.footer-contacts .link-address {
+.address__link-address {
   color: var(--primary-white-color);
   font-style: normal;
   font-size: 14px;
@@ -39,11 +39,13 @@
   }
 }
 
-.footer-contacts .link {
+.address__link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  text-decoration: none;
 
   transition: color var(--tra);
 
@@ -53,36 +55,31 @@
   }
 }
 
-.footer-contacts .item {
-  display: block;
-
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.footer__social {
+  margin-left: 70px;
 }
 
-.footer-soc-title {
+.social__title, .form-wrap_title {
   margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-
   color: var(--primary-white-color);
 }
 
-.footer-soc-list {
+.social__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-soc-item {
+.social__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-soc-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,12 +99,12 @@
   }
 }
 
-.footer-soc-icon {
+.social__icon {
   fill: currentColor;
 }
 
 /* -----footer-form----- */
-.footer-form-wrap {
+.footer__form-wrap {
   margin-left: auto;
 }
 
@@ -116,11 +113,11 @@
   gap: 12px;
 }
 
-.footer-form-field {
+.footer-form__field {
   position: relative;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -148,7 +145,7 @@
   }
 }
 
-.footer-input-label {
+.footer-form__label {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -161,18 +158,18 @@
 
   transition: transform var(--tra), color var(--tra);
 
-  .footer-input:focus + &,
-  .footer-input:not(:placeholder-shown) + & {
+  .footer-form__input:focus + &,
+  .footer-form__input:not(:placeholder-shown) + & {
     transform: translateY(-44px);
     color: var(--accent-color);
   }
 
-  .footer-input:not(:focus) + & {
+  .footer-form__input:not(:focus) + & {
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
-.footer-form .btn-primary {
+.footer-form__btn-primary {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -181,6 +178,6 @@
   width: 200px;
 }
 
-.footer-form-icon {
+.footer-btn-icon {
   fill: var(--primary-white-color);
 }

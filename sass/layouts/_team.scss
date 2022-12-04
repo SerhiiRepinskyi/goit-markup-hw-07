@@ -1,13 +1,17 @@
-.section-team {
+.team {
   background: #f5f4fa;
 }
 
-.team-list {
+.title-section--team {
+  margin-bottom: 50px;
+}
+
+.grid-team {
   display: flex;
   gap: 30px;
 }
 
-.team-list .item {
+.grid-team__item {
   /* width: calc((100% - 90px) / 4); - можна не використовувати при gap */
 
   background: var(--primary-white-color);
@@ -17,7 +21,12 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .title {
+.person__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.person__card-title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -27,7 +36,7 @@
   text-align: center;
 }
 
-.team-list .text {
+.person__card-text {
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -36,23 +45,18 @@
   letter-spacing: 0.03em;
 }
 
-.team-list .team-wrap {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.team-soc-list {
+.soc-person {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-soc-item {
+.soc-person__item {
   width: 44px;
   height: 44px;
 }
 
-.team-soc-link {
+.soc-person__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +77,11 @@
   }
 }
 
-.team-soc-icon {
+.soc-person__icon {
   fill: currentColor;
 }
 
-/* .team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
+/* .soc-person__link:hover .soc-person__icon,
+.soc-person__link:focus .soc-person__icon {
   fill: var(--primary-white-color);
 } */

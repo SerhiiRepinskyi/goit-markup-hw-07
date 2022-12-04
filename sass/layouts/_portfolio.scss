@@ -1,26 +1,24 @@
-.section-portfolio .filters {
+.filters-list {
   margin-bottom: 50px;
   display: flex;
   gap: 8px;
   justify-content: center;
 }
 
-.btn-secondary.all-btn {
-  padding: 6px 25px;
-}
-
-.portfolio-list {
+.grid-portfolio {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.portfolio-list .item {
+.grid-portfolio__item {
   /* width: calc((100% - 60px) / 3); - можна не використовувати при gap */
 }
 
-.portfolio-list .link {
+.project__link {
   display: block;
+
+  text-decoration: none;
 
   transition: box-shadow var(--tra);
 
@@ -31,13 +29,13 @@
   }
 }
 
-.portfolio-list .thumb {
+.thumb {
   position: relative;
 
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.thumb__overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -55,13 +53,20 @@
   transform: translateY(100%);
   transition: transform var(--tra);
 
-  .portfolio-list .link:hover &,
-  .portfolio-list .link:focus & {
+  .project__link:hover &,
+  .project__link:focus & {
     transform: translateY(0);
   }
 }
 
-.portfolio-list .title {
+.project__card {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.project__card-title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -70,15 +75,8 @@
   letter-spacing: 0.06em;
 }
 
-.portfolio-list .text {
+.project__card-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-}
-
-.title-text-wrap {
-  padding: 20px 24px;
-
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
