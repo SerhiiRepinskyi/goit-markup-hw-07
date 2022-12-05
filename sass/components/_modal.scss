@@ -83,8 +83,6 @@
 }
 
 .modal-form {
-  position: relative;
-
   /* max-width: 448px; */
 }
 
@@ -168,11 +166,12 @@
   }
 }
 
+/* -----checkbox----- */
 .form-checkbox {
-  /* скритий чекбокс преремістив в куток форми */
+  /* скритий чекбокс преремістив під іконку */
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 25px;
+  top: 10px;
 
   /* скидає повністю зовнішній вигляд у браузері */
   /* appearance: none;
@@ -181,16 +180,18 @@
 }
 
 .checkbox-label {
+  position: relative;
+
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  padding-left: 13px;
 
   font-size: 14px;
   line-height: calc(24 / 14);
 }
 
-.checkbox-label span {
+.checkbox-icon {
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -220,7 +221,7 @@
   }
 }
 
-.checkbox-label a {
+.checkbox-label .checkbox-policy {
   display: block;
   margin-left: 7px;
   text-decoration: underline;

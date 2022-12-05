@@ -15,7 +15,7 @@
   /* border: 1px solid transparent; */
   border-radius: 4px;
 
-  transition: color var(--tra), background-color var(--tra);
+  transition: color var(--tra), background-color var(--tra), box-shadow var(--tra);
 
   &:hover,
   &:focus {
